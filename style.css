@@ -1,61 +1,104 @@
+/* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    background-color: #f0f2f5; /* Cor de fundo suave e moderna */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Estilo para o contêiner principal */
 .container {
-    max-width: 500px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+/* Estilo para os elementos do formulário */
+.formulario label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
     color: #333;
 }
 
-.formulario {
-    margin: 20px 0;
+.formulario input[type="date"],
+.formulario input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
-label {
-    margin-right: 10px;
-}
-
-input[type="date"], input[type="time"] {
-    margin: 5px 0;
-    padding: 5px;
-    font-size: 16px;
-}
-
-button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
+.formulario button {
     background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    margin: 8px 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-ul {
-    list-style: none;
+.formulario button:hover {
+    background-color: #004494;
+    transform: scale(1.02); /* Leve aumento no botão ao passar o mouse */
+}
+
+/* Estilo para a lista de horários registrados */
+#horarios-list {
+    list-style-type: none;
     padding: 0;
 }
 
-li {
-    margin: 5px 0;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+#horarios-list li {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+/* Estilo para o footer dentro da seção 'sobre' */
+.sobre {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sobre a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+footer a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
