@@ -1,7 +1,6 @@
-/* Estilos Gerais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
-    background-color: #f0f2f5; /* Cor de fundo suave e moderna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +9,6 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo para o contêiner principal */
 .container {
     max-width: 800px;
     margin: 20px;
@@ -20,11 +18,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para os elementos do formulário */
 .formulario label {
     display: block;
     margin-bottom: 12px;
-    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-size: 16px;
     color: #333;
 }
 
@@ -52,10 +49,9 @@ body {
 
 .formulario button:hover {
     background-color: #004494;
-    transform: scale(1.02); /* Leve aumento no botão ao passar o mouse */
+    transform: scale(1.02);
 }
 
-/* Estilo para a lista de horários registrados */
 #horarios-list {
     list-style-type: none;
     padding: 0;
@@ -67,7 +63,6 @@ body {
     color: #555;
 }
 
-/* Estilo para o footer dentro da seção 'sobre' */
 .sobre {
     max-width: 800px;
     margin: 20px auto;
