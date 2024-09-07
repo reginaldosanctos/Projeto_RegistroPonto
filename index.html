@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ponto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Ponto</h1>
+
+        <!-- Formulário para inserir data e hora -->
+        <div class="formulario">
+            <label for="data">Data:</label>
+            <input type="date" id="data">
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora">
+
+            <button onclick="registrarPonto('entrada')">Entrada</button>
+            <button onclick="registrarPonto('pausaAlmoco')">Pausa Almoço</button>
+            <button onclick="registrarPonto('retornoAlmoco')">Retorno Almoço</button>
+            <button onclick="registrarPonto('saida')">Saída</button>
+        </div>
+
+        <!-- Botão para exibir os pontos registrados na data selecionada -->
+        <button onclick="exibirPontosRegistrados()">Exibir Pontos Registrados</button>
+
+        <h2>Horários Registrados</h2>
+        <ul id="horarios-list"></ul>
+
+        <h3>Total de Horas Cumpridas: <span id="horas-cumpridas">0</span> horas</h3>
+        <h3>Horas Extras: <span id="horas-extras">0</span> horas</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
