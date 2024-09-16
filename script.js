@@ -80,6 +80,14 @@ const exibirPontosRegistrados = () => {
 
     // Recalcula e exibe as horas cumpridas e horas extras somadas
     calcularHorasTotais();
+    
+    // Exibe a lista
+        lista.style.display = 'block';
+    } else {
+    
+    // Esconde a lista se ela já estiver visível
+        lista.style.display = 'none';
+    }
 };
 
 // Função para calcular e exibir as horas trabalhadas e horas extras para uma data específica
